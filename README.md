@@ -1,12 +1,13 @@
 [![Build Status](https://img.shields.io/codeship/41810250-aa07-0132-fbf4-4e62e8945e03/master.svg?style=flat-square)](https://codeship.com/projects/67868)
-[![Contributors](https://img.shields.io/github/contributors/moroshko/react-autosuggest.svg?style=flat-square)](https://github.com/moroshko/react-autosuggest/graphs/contributors)
-[![Coverage Status](https://img.shields.io/codecov/c/github/moroshko/react-autosuggest/master.svg?style=flat-square)](https://codecov.io/gh/moroshko/react-autosuggest)
+[![Coverage Status](https://img.shields.io/codecov/c/github/moroshko/bee-autosuggest/master.svg?style=flat-square)](https://codecov.io/gh/moroshko/bee-autosuggest)
 
-[![npm Downloads](https://img.shields.io/npm/dm/react-autosuggest.svg?style=flat-square)](https://npmjs.org/package/react-autosuggest)
-[![npm Version](https://img.shields.io/npm/v/react-autosuggest.svg?style=flat-square)](https://npmjs.org/package/react-autosuggest)
-![gzip size](http://img.badgesize.io/https://unpkg.com/react-autosuggest/dist/standalone/autosuggest.min.js?compression=gzip&style=flat-square)
+[![npm Downloads](https://img.shields.io/npm/dm/bee-autosuggest.svg?style=flat-square)](https://npmjs.org/package/bee-autosuggest)
+[![npm Version](https://img.shields.io/npm/v/bee-autosuggest.svg?style=flat-square)](https://npmjs.org/package/bee-autosuggest)
+![gzip size](http://img.badgesize.io/https://unpkg.com/bee-autosuggest/dist/standalone/autosuggest.min.js?compression=gzip&style=flat-square)
 
-# React Autosuggest
+# Bee Autosuggest
+
+forked from [React Autosuggest]() and fixed some BUGs.
 
 ## Demo
 
@@ -30,25 +31,25 @@ Check out the [Homepage](http://react-autosuggest.js.org) and the [Codepen examp
 ## Installation
 
 ```shell
-yarn add react-autosuggest
+yarn add bee-autosuggest
 ```
 
 or
 
 ```shell
-npm install react-autosuggest --save
+npm install bee-autosuggest --save
 ```
 
 You can also use the standalone UMD build:
 
 ```html
-<script src="https://unpkg.com/react-autosuggest/dist/standalone/autosuggest.js"></script>
+<script src="https://unpkg.com/bee-autosuggest/dist/standalone/autosuggest.js"></script>
 ```
 
 ## Basic Usage
 
 ```js
-import Autosuggest from 'react-autosuggest';
+import Autosuggest from 'bee-autosuggest';
 
 // Imagine you have a list of languages that you'd like to autosuggest.
 const languages = [
@@ -503,7 +504,7 @@ const renderInputComponent = inputProps => (
 <a name="renderSuggestionsContainerProp"></a>
 #### renderSuggestionsContainer (optional)
 
-You shouldn't specify `renderSuggestionsContainer` unless you want to customize the content or behaviour of the suggestions container beyond rendering the suggestions themselves. For example, you might want to add a custom text before/after the suggestions list, or to [customize the scrolling behaviour of the suggestions container](https://github.com/moroshko/react-autosuggest/blob/master/FAQ.md#limitSuggestionsContainerScrolling).
+You shouldn't specify `renderSuggestionsContainer` unless you want to customize the content or behaviour of the suggestions container beyond rendering the suggestions themselves. For example, you might want to add a custom text before/after the suggestions list, or to [customize the scrolling behaviour of the suggestions container](https://github.com/moroshko/bee-autosuggest/blob/master/FAQ.md#limitSuggestionsContainerScrolling).
 
 The signature is:
 
@@ -586,20 +587,20 @@ When not specified, `theme` defaults to:
 
 ```js
 {
-  container:                'react-autosuggest__container',
-  containerOpen:            'react-autosuggest__container--open',
-  input:                    'react-autosuggest__input',
-  inputOpen:                'react-autosuggest__input--open',
-  inputFocused:             'react-autosuggest__input--focused',
-  suggestionsContainer:     'react-autosuggest__suggestions-container',
-  suggestionsContainerOpen: 'react-autosuggest__suggestions-container--open',
-  suggestionsList:          'react-autosuggest__suggestions-list',
-  suggestion:               'react-autosuggest__suggestion',
-  suggestionFirst:          'react-autosuggest__suggestion--first',
-  suggestionHighlighted:    'react-autosuggest__suggestion--highlighted',
-  sectionContainer:         'react-autosuggest__section-container',
-  sectionContainerFirst:    'react-autosuggest__section-container--first',
-  sectionTitle:             'react-autosuggest__section-title'
+  container:                'bee-autosuggest__container',
+  containerOpen:            'bee-autosuggest__container--open',
+  input:                    'bee-autosuggest__input',
+  inputOpen:                'bee-autosuggest__input--open',
+  inputFocused:             'bee-autosuggest__input--focused',
+  suggestionsContainer:     'bee-autosuggest__suggestions-container',
+  suggestionsContainerOpen: 'bee-autosuggest__suggestions-container--open',
+  suggestionsList:          'bee-autosuggest__suggestions-list',
+  suggestion:               'bee-autosuggest__suggestion',
+  suggestionFirst:          'bee-autosuggest__suggestion--first',
+  suggestionHighlighted:    'bee-autosuggest__suggestion--highlighted',
+  sectionContainer:         'bee-autosuggest__section-container',
+  sectionContainerFirst:    'bee-autosuggest__section-container--first',
+  sectionTitle:             'bee-autosuggest__section-title'
 }
 ```
 

@@ -7,7 +7,7 @@
     "type": "git",
     "url": "git+https://github.com/tinper-bee/bee-autosuggest.git"
   },
-  "author": "Misha Moroshko <michael.moroshko@gmail.com>",
+  "author": "yaoxinc",
   "scripts": {
     "start": "mkdir -p demo/dist && npm run copy-static-files && node server",
     "prettier": "prettier --single-quote --write \".*.js\" \"*.js\" \"demo/src/**/*.js\" \"demo/standalone/app.js\" \"src/**/*.js\" \"test/**/*.js\"",
