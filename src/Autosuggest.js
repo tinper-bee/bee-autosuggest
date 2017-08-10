@@ -428,9 +428,9 @@ export default class Autosuggest extends Component {
     const { value } = inputProps;
     const { valueBeforeUpDown } = this.state;
 
-     /*return (valueBeforeUpDown || value).trim();*/
-    var returnValue = (valueBeforeUpDown || value);
-    return returnValue ? returnValue.trim() : ""
+    /*return (valueBeforeUpDown || value).trim();*/
+    var returnValue = valueBeforeUpDown || value;
+    return returnValue ? returnValue.trim() : '';
   }
 
   renderSuggestionsContainer = ({ containerProps, children }) => {
